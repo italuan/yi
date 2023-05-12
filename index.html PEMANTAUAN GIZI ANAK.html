@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Pemantauan Gizi Anak</title>
+	<style type="text/css">
+		form {
+			margin: 50px auto;
+			padding: 20px;
+			width: 500px;
+			background-color: #f2f2f2;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+		}
+		input[type="submit"] {
+			padding: 10px;
+			background-color: #4CAF50;
+			color: white;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+		input[type="submit"]:hover {
+			background-color: #3e8e41;
+		}
+		label {
+			display: block;
+			margin-top: 20px;
+		}
+		input, select {
+			padding: 10px;
+			border-radius: 5px;
+			border: 1px solid #ccc;
+			width: 100%;
+		}
+		select {
+			height: 40px;
+		}
+		img {
+			display: block;
+			margin: 0 auto;
+			max-width: 100%;
+			height: auto;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<h2>Form Pemantauan Gizi Anak</h2>
+		<label>Nama Anak</label>
+		<input type="text" name="nama_anak" required>
+			<label>Jenis Kelamin</label>
+			<select name="jenis_kelamin" required>
+				<option value="">Pilih Jenis Kelamin</option>
+				<option value="Laki-laki">Laki-laki</option>
+				<option value="Perempuan">Perempuan</option>
+			</select>
+		<label>Tanggal Lahir</label>
+		<input type="date" name="tanggal_lahir" required>
+		<label>Berat Badan (kg)</label>
+		<input type="number" name="berat_badan" required>
+		<label>Tinggi Badan (cm)</label>
+		<input type="number" name="tinggi_badan" required>
+		<input type="submit" value="Simpan">
+	</form>
+	<img src="Pemantauan gizi anak.jpeg" alt="Foto Anak">
+</body>
+</html>
